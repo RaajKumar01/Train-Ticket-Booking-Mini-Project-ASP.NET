@@ -1,52 +1,52 @@
-# Train-Ticket-Booking---Mini-Project-
-Train Ticket Booking as mini project written in ASP.NET C# with HTML and CSS with MS Access DB
-
-1. Title
+Title
 Online Train Ticket Booking
 
-2. Description
-The Online Train Ticket Booking System is a simple, web-based mini project designed to facilitate train ticket booking. 
-It allows users to register, search for trains, book tickets, print tickets and add train data through an admin panel 
+Description
+The Online Train Ticket Booking System is a simple web-based mini project designed to facilitate train ticket booking. It allows users to register, search for trains, book tickets, print tickets, and manage train data through an admin panel.
 
-3. Technology Used
-Frontend: HTML, CSS, JavaScript 
+Technology Used
+Frontend: HTML, CSS, JavaScript
 Backend: ASP.NET (C#)
 Database: MS Access (MDB format)
+Features
+Frontend
+HTML and CSS for layout and design
+JavaScript for form validation and interactivity
+Backend
+ASP.NET (C#) for server-side logic
+Modules
+User Authentication
 
+Login and registration functionality
+Search and Book Tickets
 
-4. Frontend and Backend
-Frontend:
-HTML and CSS for design, JavaScript for validation.
-Backend:
-ASP.NET (C#) for server-side logic.
+Train search and selection
+Dummy payment gateway for ticket confirmation
+Admin Module
 
-5. Modules
-1. User Authentication: Login and registration.
-2. Search and Book Tickets:
-3. Train search and selection. Dummy payment for ticket confirmation.
-4. Admin Module: Add train details.
-5. Ticket Page to view and print ticket
+Add and manage train details
+Ticket Management
 
-6. Pages
-Login Page: User authentication.
-Registration Page: New user sign-up.
-Home Page: Display available trains.
-Book Ticket Page: Search and book tickets.
-Confirm Booking Page: Payment and booking confirmation.
-Admin Page: Train management.
-Show Ticket - Ticket Page  to view and print ticket
+View and print booked tickets
+Pages
+Login Page: User authentication
+Registration Page: New user sign-up
+Home Page: Display available trains
+Book Ticket Page: Search and book tickets
+Confirm Booking Page: Payment and booking confirmation
+Admin Page: Train management
+Show Ticket Page: View and print tickets
+Setting Up the Database
+Steps to Create an MS Access (MDB) Database:
+Open Microsoft Access
 
+Launch Microsoft Access on your computer.
+Select "Blank Database" from the available options.
+Choose Database Format
 
-** Here are the steps to create an MS Access (MDB) database:
+In the "File Name" field, enter your desired database name (e.g., miniProject.mdb).
+Click the "Browse" button next to the file name, choose a location, and ensure the "Save as type" is set to Microsoft Access 2002-2003 Database (*.mdb).
+Click Create
 
-1. Open Microsoft Access
-Launch Microsoft Access from your computer.
-Select Blank Database from the available options.
-2. Choose Database Format
-     In the File Name field, enter the desired name for your database (e.g., miniProject.mdb).
-     Click the Browse button next to the file name, choose a location, 
-    and ensure the Save as type is set to Microsoft Access 2002-2003 Database (*.mdb).
-3. Click Create.
-
-
-Note: To set admin. Change the value of admin field from 0 to 1 in the users table.
+Notes:
+To set an admin, update the admin field in the users table. Change its value from 0 to 1.
