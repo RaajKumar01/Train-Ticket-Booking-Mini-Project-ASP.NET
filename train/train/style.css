@@ -1,0 +1,429 @@
+﻿html, body {
+    height: 100%; /* Makes the flex layout work correctly */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Ensures footer placement at the bottom */
+}
+
+body {
+    font-family: Arial, sans-serif, Helvetica;
+    background-image: linear-gradient(180deg, #011627, #04394b, #13858a);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; /* Maintains the aspect ratio of the gradient */
+    min-height: 100vh; /* Ensures the body fills the viewport */
+}
+ 
+/* Wrapper to push footer to the bottom */
+.content-wrapper {
+    flex: 1; /* Fills the remaining space */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Nagivation  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+ .navbar .title {
+     font-size: 24px;
+     font-weight: bold;
+     font-style: italic;
+ }
+
+ .navbar .menu {
+     display: flex;
+     gap: 20px;
+ }
+
+ .navbar .menu a {
+     text-decoration: none;
+     font-weight: bold;
+     color: #ffffff;
+ }
+
+.navbar .menu a:hover {
+   letter-spacing: 1.5px;
+   transition: 0.5s;
+   color: #ffffff;
+}
+/* Nagivation End  */
+
+
+/* User Info Section Once Logged in at navvar*/
+.user-info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 40px;
+    color: #ffffff;
+    gap: 10px;
+}
+
+.user-info .logout-btn {
+    padding: 5px 10px;
+    background-color: #ff5555;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.user-info .logout-btn:hover {
+    background-color: #e64444;
+}
+/* User Info Section End  */
+
+
+
+/* Home page */
+ .main-content {
+     text-align: center;
+     margin: 20px auto;
+ }
+
+
+ .main-content h1 {
+     font-size: 35px;
+     font-weight: bold;
+     color: white;
+     margin: 2.5em 0em 1em 0em;
+     text-shadow: 3px 3px #000000;
+  
+ }
+
+ .main-content h3 {
+     font-size: 20px;
+     font-weight: bold;
+     color: white;
+     text-shadow: 1px 1px #000000;
+ }
+
+
+.home-button {
+       padding: 20px 20px;
+       display: flex;
+       justify-content: center; /* Horizontal center */
+       align-items: center; /* Vertical center */
+       gap: 20px; 
+}
+
+.home-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #000000; /* Border color */
+    transition: 0.5s;
+    background-color: transparent;
+}
+
+.home-button a:hover {
+    border: 2px solid #ffffff;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: black;
+    border-radius: 20px;
+    transition: 1s;
+}
+/* End Home page */
+
+
+/* Login and Register page */
+ .lr-main-content {
+     text-align: center;
+     margin: 40px auto;
+ }
+
+.lr-main-content h1 {
+     font-size: 35px;
+     font-weight: bold;
+     color: white;
+     text-shadow: 3px 3px #000000;
+ }
+
+.login-box {
+    background-color: rgba(20, 40, 60, 0.7);
+    width: 400px;
+    height: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+    border-radius: 12px; /* Optional rounded corners */
+    padding: 30px; /* Add inner spacing */
+    display: inline-block;
+    color: white;
+}
+
+ 
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+ 
+.register-box {
+     background-color: rgba(20, 40, 60, 0.7);
+    width: 400px;
+    height: 290px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+    border-radius: 12px; /* Optional rounded corners */
+    padding: 35px; /* Add inner spacing */
+    display: inline-block;
+    color: white;
+    
+}
+
+.register-box input[type="text"],
+.register-box input[type="email"],
+.register-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+ 
+.register-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.register-box button:hover, .login-box button:hover {
+    background-color: #11737a;
+}
+/* End of Login and Register page */
+
+
+/* Dashboard Page */
+.tickets-section h2 {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.tickets-section .no-tickets {
+    font-size: 20px;
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.book-ticket-btn {
+  text-align: center; /* Center the button horizontally */
+}
+
+.book-ticket-btn button {
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #13858a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-ticket-btn button:hover {
+    background-color: #11737a;
+}
+/* Dashboard Page */
+
+
+/*  Main pages title Content */
+ .pages-main-content {
+     margin: 40px auto;
+ }
+
+.pages-main-content h1 {
+     text-align: center;
+     font-size: 35px;
+     font-weight: bold;
+     color: white;
+     text-shadow: 3px 3px #000000;
+ }
+/* End of main title pages content*/
+
+
+/* Admin page - data entry form for train */
+ .train-form {
+    background-color: rgba(20, 40, 60, 0.7);
+    padding: 30px;
+    width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    color: white;
+}
+
+.train-form label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.train-form input, .train-form select , .train-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.train-form .input-group {
+    display: flex;
+    gap: 20px;
+}
+
+.train-form .input-group input {
+    width: 80%;
+}
+
+.train-form button {
+    padding: 10px 20px;
+    background-color: #13858a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+     
+}
+
+.train-form button:hover {
+    background-color: #11737a;
+}
+/* End of Admin page*/
+
+/* Book Ticket Page */
+.book-form-page #searchSection {
+    background-color: rgba(20, 40, 60, 0.7);
+    padding: 20px;
+    width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    color: white;
+    
+}
+
+.book-form-page #searchSection label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+}
+ 
+.book-form-page #searchSection input {
+    width: 100%; 
+    padding: 8px;  
+    margin-bottom: 10px;  
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.book-form-page #searchSection button {
+    padding: 8px 15px;  
+    background-color: #13858a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;  
+    width: 100%;     
+}
+
+.book-form-page #searchSection button:hover {
+    background-color: #11737a;
+}
+
+ .book-form-main {
+    background-color: rgba(20, 40, 60, 0.7);
+    padding: 30px;
+    width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    color: white;
+}
+
+.book-form-main label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.book-form-main input, .book-form-main select , .book-form-main textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.book-form-main button {
+    padding: 10px 20px;
+    background-color: #13858a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+     
+}
+
+.book-form-main button:hover {
+    background-color: #11737a;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 7px;
+    color: white;
+    background-color: #04394b; /* Footer background */
+    text-shadow: 1px 2px #000000;
+
+}

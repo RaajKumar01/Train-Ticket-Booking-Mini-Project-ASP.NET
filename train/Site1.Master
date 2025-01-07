@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="train.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+   
+       <div class="navbar">
+
+        <div class="title">Trains</div>
+
+                <div class="menu">
+                    <a href="Home.aspx">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Admin</a>
+                    <a href="#">Book Ticket</a>
+                </div>
+
+       </div>
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server"> </asp:ContentPlaceHolder>
+    
+    
+    <footer>
+        &copy; 2024 Online Train Ticket Booking. All rights reserved.
+    </footer>
+
+    
+</body>
+</html>
