@@ -6,7 +6,7 @@ The Online Train Ticket Booking System is a simple, web-based mini project desig
 It allows users to register, search for trains, book tickets, print tickets and add train data through an admin panel 
 
 ## Technology Used
-- Frontend: HTML, CSS, JavaScript 
+- Frontend: HTML, CSS
 - Backend: ASP.NET (C#)
 - Database: MS Access (MDB format)
 
