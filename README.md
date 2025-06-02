@@ -19,10 +19,10 @@ It allows users to register, search for trains, book tickets, print tickets and 
 
 ## Modules
 -  User Authentication: Login and registration.
--  Search and Book Tickets:
+-  Search and Book Tickets.
 -  Train search and selection. Dummy payment for ticket confirmation.
 -  Admin Module: Add train details.
--  Ticket Page to view and print ticket
+-  Ticket Page to view and print ticket.
 
 ## Pages
 - Login Page: User authentication.
@@ -31,4 +31,4 @@ It allows users to register, search for trains, book tickets, print tickets and 
 - Book Ticket Page: Search and book tickets.
 - Confirm Booking Page: Payment and booking confirmation.
 - Admin Page: Train management.
-- Show Ticket - Ticket Page  to view and print ticket
+- Show Ticket - Ticket Page  to view and print ticket.
